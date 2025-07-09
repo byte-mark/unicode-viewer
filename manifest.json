@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Unicode Non-Printable Character Viewer",
+  "version": "1.2",
+  "description": "Toggle display of non-printable Unicode characters on webpages.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["toggle.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "icons": {
+    "48": "icon.png"
+  }
+}
